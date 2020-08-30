@@ -1,83 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>YouTube</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  </head>
-  
-  <body>
-   <div class="page-container">
-    <header>
-      <div class="logo"><a href="#"><img src="http://eden.rutgers.edu/~ttb39/logo.PNG"></a>
-      <div class="search-bar"><img src="http://eden.rutgers.edu/~ttb39/search.JPG"></div><div class="sign-in"><a href="#"><img src="http://eden.rutgers.edu/~ttb39/sign-in.PNG"></a></div>
-    </header>
-     
-    
-     <nav>
-       <p id="hover"><a href="#">Home<a></p>
-     <p id="hover"><a href="#">Trending<a></p>
-     <p id="hover"><a href="#">History<a></p>
-     <p id="hover"><a href="#">Get YouTube Red<a></p>
-       <hr>
-       <h3 style="color:red;font-weight:400; font-family:arial;font-size:.9em;">Best of Youtube</h3>
-     <p id="hover"><a href="#">Music<a></p>
-     <p id="hover"><a href="#">Sports<a></p>
-     <p id="hover"><a href="#">Gaming<a></p>
-     <p id="hover"><a href="#">Movies<a></p>
-     <p id="hover"><a href="#">TV Shows<a></p>
-     <p id="hover"><a href="#">News<a></p>
-     <p id="hover"><a href="#">Live<a></p>
-     <p id="hover"><a href="#">Spotlight<a></p>
-     <p id="hover"><a href="#">360 Video<a></p>
-       <hr>
-     <p id="hover"><a href="#">Browse channels<a></p>
-       <hr>
-       <p>Sign in now to see your channels and recommendations!</p>
-     </nav>
-<!--nav2------------------------------------------------------------------>     
-    <div class="nav2">
-      <a href="#"><h4>Home&nbsp;&nbsp;</h4></a><a href="#"><h4 style="font-weight:200; color:#c3c3c3">&nbsp;&nbsp;Trending</h4></a>
-     </div>
-<!--Article------------------------------------------------------------------>
-     <div class="article-container">
-       
-       <div class="row1">
-       
-         <div class="cell1"><a href="#"><img src="http://eden.rutgers.edu/~ttb39/5.jpg"></a><a href="#">JUSTICE LEAGUE - Official Trailer 1</a>
-         <p>Warner Bros. Pictures</p>
-           <p>13,106,926 views - 1 day ago</p>
-         </div>
-         <div class="cell1"><a href="#"><img src="http://eden.rutgers.edu/~ttb39/6.jpg"></a><a href="#">JUSTICE LEAGUE - Official Trailer 1</a><p>Warner Bros. Pictures</p>
-           <p>13,106,926 views - 1 day ago</p></div>
-         <div class="cell1"><a href="#"><img src="http://eden.rutgers.edu/~ttb39/7.jpg"></a><a href="#">JUSTICE LEAGUE - Official Trailer 1</a><p>Warner Bros. Pictures</p>
-           <p>13,106,926 views - 1 day ago</p></div>
-         <div class="cell1"><a href="#"><img src="http://eden.rutgers.edu/~ttb39/8.jpg"></a><a href="#">JUSTICE LEAGUE - Official Trailer 1</a><p>Warner Bros. Pictures</p>
-           <p>13,106,926 views - 1 day ago</p></div>
-        
-         
-         <div class="cell1 clear"><a href="#"><img src="http://eden.rutgers.edu/~ttb39/1.jpg"></a><a href="#">JUSTICE LEAGUE - Official Trailer 1</a><p>Warner Bros. Pictures</p>
-           <p>13,106,926 views - 1 day ago</p></div>
-         <div class="cell1"><a href="#"><img src="http://eden.rutgers.edu/~ttb39/2.jpg"></a><a href="#">JUSTICE LEAGUE - Official Trailer 1</a><p>Warner Bros. Pictures</p>
-           <p>13,106,926 views - 1 day ago</p></div>
-         <div class="cell1"><a href="#"><img src="http://eden.rutgers.edu/~ttb39/3.jpg"></a><a href="#">JUSTICE LEAGUE - Official Trailer 1</a><p>Warner Bros. Pictures</p>
-           <p>13,106,926 views - 1 day ago</p></div>
-         <div class="cell1"><a href="#"><img src="http://eden.rutgers.edu/~ttb39/4.jpg"></a><a href="#">JUSTICE LEAGUE - Official Trailer 1</a><p>Warner Bros. Pictures</p>
-           <p>13,106,926 views - 1 day ago</p></div>
-     
-         </div>
-       
-      </div>     
-<!--Article------------------------------------------------------------------>
-     <footer>
-       <div class="footer-box"><p><span style="color:#a3a3a3;">Language:</span>English</div>
-         <div class="footer-box"><p><span style="color:#a3a3a3;">Content location:</span> United States</div>
-       <div class="footer-box"><p><span style="color:#a3a3a3;">Restricted Mode:</span>   Off</div>
-       <div class="footer-box"><p>History</div>
-       <div class="footer-box"><p>Help</div>
-       <hr>
-     </footer>
-    
-    </div>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
 
+    <header class="main-header">
+        <div class="logo-container">
+            <i class="fas fa-bars"></i>
+            <i class="fab fa-youtube logo"></i>
+            <p>YouTube</p>
+        </div>
+
+        <div class="search-tool">
+            <input type="text" id="search-bar">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="dashboard-min">
+            <i class="fas fa-video"></i>
+            <i class="fas fa-th"></i>
+            <i class="fas fa-comment"></i>
+            <i class="fas fa-bell"></i>
+            <img src="images/photo.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="video-column">
+            <div class="video-player">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KmtzQCSh6xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <h3 class="video-title">Numa Numa</h3>
+
+            <div class="video-info-main">
+                <h4 class="view-counter">31,415,926 Views</h4>
+
+                <div class="video-info-right">
+                    <div class="likes-section">
+                        <i class="fas fa-thumbs-up"></i>
+                        <p class="likes-counter">4K</p>
+                        <i class="fas fa-thumbs-down"></i>
+                        <p class="dislikes-counter">7</p>
+                    </div>
+
+                    <div class="share-section">
+                        <i class="fas fa-share"></i>
+                        <p>Share</p>
+
+                        <i class="fas fa-plus"></i>
+                        <p>Save</p>
+
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description-box">
+                <img src="images/photo.jpg" alt="Profile Picture" class="profile-pic">
+
+                <div class="description-div">
+                    <h5>Generic YouTuber</h5>
+                    <p>Published on Dec 6, 2004</p>
+                    <p>This is a cool video. You should totally watch it! Leave a like and don't forget to subscribe!</p>
+                </div>
+            </div>
+
+            <h4 style="font-weight: normal">0 Comments</h4>
+        </div>
+
+        <div class="thumbnail-column">
+            <div class="thumbnail-box">
+                <img src="images/thumb.jpg" alt="">
+                
+                <div class="thumb-info">
+                    <h5>A Super Cool Video Title</h5>
+                    <p>Generic YouTuber</p>
+                    <p>35K views</p>
+                </div>
+            </div>
+
+            <div class="thumbnail-box">
+                <img src="images/thumb.jpg" alt="">
+                
+                <div class="thumb-info">
+                    <h5>Another cool video</h5>
+                    <p>Generic YouTuber</p>
+                    <p>78K views</p>
+                </div>
+            </div>
+
+            <div class="thumbnail-box">
+                <img src="images/thumb.jpg" alt="">
+                
+                <div class="thumb-info">
+                    <h5>A Super Cool Video Title</h5>
+                    <p>Generic YouTuber</p>
+                    <p>35K views</p>
+                </div>
+            </div>
+
+            <div class="thumbnail-box">
+                <img src="images/thumb.jpg" alt="">
+                
+                <div class="thumb-info">
+                    <h5>Another cool video</h5>
+                    <p>Generic YouTuber</p>
+                    <p>78K views</p>
+                </div>
+            </div>
+
+            <div class="thumbnail-box">
+                <img src="images/thumb.jpg" alt="">
+                
+                <div class="thumb-info">
+                    <h5>A Super Cool Video Title</h5>
+                    <p>Generic YouTuber</p>
+                    <p>35K views</p>
+                </div>
+            </div>
+
+            <div class="thumbnail-box">
+                <img src="images/thumb.jpg" alt="">
+                
+                <div class="thumb-info">
+                    <h5>Another cool video</h5>
+                    <p>Generic YouTuber</p>
+                    <p>78K views</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
 </html>
