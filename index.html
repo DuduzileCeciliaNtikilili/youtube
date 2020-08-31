@@ -1,144 +1,127 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>YouTube</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-</head>
-<body>
+<html lang="en">
 
-    <header class="main-header">
-        <div class="logo-container">
-            <i class="fas fa-bars"></i>
-            <i class="fab fa-youtube logo"></i>
-            <p>YouTube</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+      integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Youtube clone</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="nav-main">
+      <ul class="nav--list">
+        <ul class="nav--left">
+          <li>
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </li>
+          <li>
+            <a href="#"><img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png" alt="Youtube logo" ></a>
+          </li>
+        </ul>
+
+        <ul class="nav--search">
+          <li>
+            <input class="input-search" type="text" name="Search" placeholder="Search" />
+            <button><i class="fas fa-search"></i></button>
+          </li>
+        </ul>
+
+        <ul class="nav--right">
+          <li>
+            <a href="#"><i class="fas fa-video"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-th"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-comment"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-bell"></i></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/img/user-profile.jpg" alt="User Profile picture" /></a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+
+    <!-- VIDEO SECTION -->
+
+    <main>
+      <article>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/REhhKr6efTo" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <header>
+          <div class="video-stats">
+            <h1 class="video-title">
+              How to be a dev
+            </h1>
+            <p>2.601.131 Views</p>
+          </div>
+
+          <nav class="nav-video">
+            <a href="#"><i class="fas fa-thumbs-up"></i>71K</a>
+            <a href="#"><i class="fas fa-thumbs-down"></i>1.3K</a>
+            <a href="#"><i class="fas fa-share"></i>SHARE</a>
+            <a href="#"><i class="fas fa-list"></i>SAVE</a>
+            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+          </nav>
+        </header>
+      <!-- VIDEO RECOMMENDATIONS -->
+      <aside>
+        <div class="video__controls">
+          <p>Up Next</p>
+          <div class="autoplay">
+            <i class="fas fa-toggle-on"></i>
+            <p>AUTOPLAY</p>
+          </div>
         </div>
 
-        <div class="search-tool">
-            <input type="text" id="search-bar">
-            <button id="search-button"><i class="fas fa-search"></i></button>
+        <div class="video__container">
+          <div class="video-box">
+            <img src="https://www.agentorange.co.za/logo-design/application/files/9014/9459/5437/case-study-agent-orange-design-bionex-corporate-identity-designs-sketch-option1-thumbnail.jpg" alt="Video thumbnail" class="video-box__thumbnail">
+            <div class="video-box__details">
+              <h3>>How to become a beast Zaio dev?</h3>
+              <p>Zaio</p>
+              <p>1000 views</p>
+            </div>
+          </div>
+
+          <div class="video-box">
+            <img src="https://www.agentorange.co.za/logo-design/application/files/9014/9459/5437/case-study-agent-orange-design-bionex-corporate-identity-designs-sketch-option1-thumbnail.jpg" alt="Video thumbnail" class="video-box__thumbnail">
+            <div class="video-box__details">
+              <h3>>How to become a beast Zaio dev?</h3>
+              <p>Zaio</p>
+              <p>1000 views</p>
+            </div>
+          </div>
+
+          <div class="video-box">
+            <img src="https://www.agentorange.co.za/logo-design/application/files/9014/9459/5437/case-study-agent-orange-design-bionex-corporate-identity-designs-sketch-option1-thumbnail.jpg" alt="Video thumbnail" class="video-box__thumbnail">
+            <div class="video-box__details">
+              <h3>>How to become a beast Zaio dev?</h3>
+              <p>Zaio</p>
+              <p>1000 views</p>
+            </div>
+          </div>
+            </div>
+          </div>
+
         </div>
+      </aside>
 
-        <div class="dashboard-min">
-            <i class="fas fa-video"></i>
-            <i class="fas fa-th"></i>
-            <i class="fas fa-comment"></i>
-            <i class="fas fa-bell"></i>
-            <img src="images/photo.jpg" alt="Profile Picture" class="profile-pic">
-        </div>
-    </header>
+    </main>
+  </body>
 
-    <div class="page-content">
-        <div class="video-column">
-            <div class="video-player">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KmtzQCSh6xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <h3 class="video-title">Numa Numa</h3>
-
-            <div class="video-info-main">
-                <h4 class="view-counter">31,415,926 Views</h4>
-
-                <div class="video-info-right">
-                    <div class="likes-section">
-                        <i class="fas fa-thumbs-up"></i>
-                        <p class="likes-counter">4K</p>
-                        <i class="fas fa-thumbs-down"></i>
-                        <p class="dislikes-counter">7</p>
-                    </div>
-
-                    <div class="share-section">
-                        <i class="fas fa-share"></i>
-                        <p>Share</p>
-
-                        <i class="fas fa-plus"></i>
-                        <p>Save</p>
-
-                        <i class="fas fa-ellipsis-h"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="description-box">
-                <img src="images/photo.jpg" alt="Profile Picture" class="profile-pic">
-
-                <div class="description-div">
-                    <h5>Generic YouTuber</h5>
-                    <p>Published on Dec 6, 2004</p>
-                    <p>This is a cool video. You should totally watch it! Leave a like and don't forget to subscribe!</p>
-                </div>
-            </div>
-
-            <h4 style="font-weight: normal">0 Comments</h4>
-        </div>
-
-        <div class="thumbnail-column">
-            <div class="thumbnail-box">
-                <img src="images/thumb.jpg" alt="">
-                
-                <div class="thumb-info">
-                    <h5>A Super Cool Video Title</h5>
-                    <p>Generic YouTuber</p>
-                    <p>35K views</p>
-                </div>
-            </div>
-
-            <div class="thumbnail-box">
-                <img src="images/thumb.jpg" alt="">
-                
-                <div class="thumb-info">
-                    <h5>Another cool video</h5>
-                    <p>Generic YouTuber</p>
-                    <p>78K views</p>
-                </div>
-            </div>
-
-            <div class="thumbnail-box">
-                <img src="images/thumb.jpg" alt="">
-                
-                <div class="thumb-info">
-                    <h5>A Super Cool Video Title</h5>
-                    <p>Generic YouTuber</p>
-                    <p>35K views</p>
-                </div>
-            </div>
-
-            <div class="thumbnail-box">
-                <img src="images/thumb.jpg" alt="">
-                
-                <div class="thumb-info">
-                    <h5>Another cool video</h5>
-                    <p>Generic YouTuber</p>
-                    <p>78K views</p>
-                </div>
-            </div>
-
-            <div class="thumbnail-box">
-                <img src="images/thumb.jpg" alt="">
-                
-                <div class="thumb-info">
-                    <h5>A Super Cool Video Title</h5>
-                    <p>Generic YouTuber</p>
-                    <p>35K views</p>
-                </div>
-            </div>
-
-            <div class="thumbnail-box">
-                <img src="images/thumb.jpg" alt="">
-                
-                <div class="thumb-info">
-                    <h5>Another cool video</h5>
-                    <p>Generic YouTuber</p>
-                    <p>78K views</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-</body>
 </html>
